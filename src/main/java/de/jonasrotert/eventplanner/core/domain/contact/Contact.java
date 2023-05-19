@@ -34,6 +34,9 @@ public class Contact extends BaseEntity {
 	@Email
 	private String email;
 
+	@Enumerated(EnumType.STRING)
+	private Status status;
+
 	private LocalDate birthday;
 
 	@Enumerated(EnumType.STRING)
